@@ -1,1 +1,106 @@
-<div>Edit Client Info Here</div>
+<div class="p-6 space-y-6 outer-container">
+  <h2 class="text-xl font-medium">Edit Subscription / Plan</h2>
+
+  <!-- Org ID -->
+  <div class="space-y-4 formfield">
+    <div class="text-lg">Org ID : <span>to be displayed Here</span></div>
+
+    <div class="text-base">
+        <label>Email : </label>
+        <span>Kiran Pande</span>
+    </div>
+
+    <div class="text-base">
+      <label>Email : </label>
+      <span>kiran.pande@re-twin.energy</span>
+    </div>
+
+  </div>
+
+  <!-- Subscription dropdown -->
+  <mat-form-field>
+    <mat-label>Subscription Status</mat-label>
+    <mat-select value="basic">
+      <mat-option value="basic">Basic</mat-option>
+      <mat-option value="pro">Pro</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <!-- Country radio buttons -->
+  <div class="w-full">
+    <mat-label class="block mb-2">Country</mat-label>
+    <mat-radio-group class="flex gap-6">
+      <mat-radio-button value="germany">Germany</mat-radio-button>
+      <mat-radio-button value="belgium">Belgium</mat-radio-button>
+      <mat-radio-button value="austria">Austria</mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+  <!-- Action buttons -->
+  <div class="flex justify-end gap-4">
+    <button mat-stroked-button color="white">Edit</button>
+    <button mat-raised-button color="white">Save</button>
+  </div>
+</div>
+
+<div class="p-6 space-y-6 outer-container">
+  <h2 class="text-xl font-medium">Edit Limits & Stats</h2>
+
+  <!-- Two column layout -->
+  <div class="grid grid-cols-3 gap-6">
+
+    <!-- Max Concurrent Runs -->
+    <mat-form-field class="w-full">
+      <mat-label>Max Concurrent Runs</mat-label>
+      <input matInput type="number" placeholder="Enter max concurrent runs" required>
+    </mat-form-field>
+
+    <!-- Max Project Per Org -->
+    <mat-form-field  class="w-full">
+      <mat-label>Max Project</mat-label>
+      <input matInput type="number" placeholder="Enter max projects" required>
+    </mat-form-field>
+
+    <!-- Max Run Count -->
+    <mat-form-field  class="w-full">
+      <mat-label>Max Run Count</mat-label>
+      <input matInput type="number" placeholder="Enter max run count" required>
+    </mat-form-field>
+
+    <!-- Max Scenario Per Project -->
+    <mat-form-field class="w-full">
+      <mat-label>Max Scenario</mat-label>
+      <input matInput type="number" placeholder="Enter max scenarios" required>
+    </mat-form-field>
+
+    <!-- Project Count -->
+    <mat-form-field class="w-full">
+      <mat-label>Project Count</mat-label>
+      <input matInput type="number" placeholder="Enter project count" required>
+    </mat-form-field>
+
+    <!-- Run Count -->
+    <mat-form-field class="w-full">
+      <mat-label>Run Count</mat-label>
+      <input matInput type="number" placeholder="Enter run count" required>
+    </mat-form-field>
+
+    <!-- Scenario Count -->
+    <mat-form-field class="w-full">
+      <mat-label>Scenario Count</mat-label>
+      <input matInput type="number" placeholder="Enter scenario count" required>
+    </mat-form-field>
+
+    <!-- Running Scenarios -->
+    <mat-form-field class="w-full">
+      <mat-label>Running Scenarios</mat-label>
+      <input matInput placeholder="Running Scenarios">
+    </mat-form-field>
+  </div>
+
+  <!-- Action buttons -->
+  <div class="flex justify-end gap-4 pt-4">
+    <button mat-stroked-button color="primary">Edit</button>
+    <button mat-raised-button color="accent">Save</button>
+  </div>
+</div>

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Tabular } from './tabular';
+import { TablubarData } from './tabular';
 
 describe('Tabular', () => {
-  let component: Tabular;
-  let fixture: ComponentFixture<Tabular>;
+  let component: TablubarData;
+  let fixture: ComponentFixture<TablubarData>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Tabular]
+      imports: [TablubarData]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Tabular);
+    fixture = TestBed.createComponent(TablubarData);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
